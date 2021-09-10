@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var titleTextField: UITextField!
+    
+    @IBOutlet weak var noteTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        noteTextView.layer.borderWidth = 0.2
+        noteTextView.layer.cornerRadius = 3
+        
+        titleTextField.layer.cornerRadius = 3
     }
 
 
+    @IBAction func addButtonPressed(_ sender: UIButton) {
+        
+    }
 }
 
